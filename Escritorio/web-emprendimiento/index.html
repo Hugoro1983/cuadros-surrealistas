@@ -3,10 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuadros Surrealistas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ONÍRICA | Galería de Arte Surrealista</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes de Google para un estilo editorial y místico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Cuadros Surrealistas</h1>
+
+    <!-- Fondo animado con orbes de luz -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navegación flotante -->
+    <header class="navbar">
+        <a href="#" class="logo">ONÍRICA</a>
+        <nav>
+            <a href="#manifiesto">Manifiesto</a>
+            <a href="#galeria">Obras</a>
+            <a href="#contacto">Adquisiciones</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero (Portada) -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle">COLECCIÓN PRIVADA • 2026</p>
+            <h1 class="glitch-title" data-text="DONDE LA REALIDAD SE DERRITE">DONDE LA REALIDAD SE DERRITE</h1>
+            <p class="description">Piezas únicas pintadas al óleo que desafían la lógica del tiempo, el espacio y el subconsciente humano.</p>
+            <a href="#galeria" class="btn-explore">Explorar el Subconsciente</a>
+        </div>
+
+        <!-- Elemento visual abstracto en CSS puro -->
+        <div class="surreal-portal">
+            <div class="portal-ring"></div>
+            <div class="portal-core">
+                <div class="eye">
+                    <div class="pupil"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Manifiesto -->
+    <section id="manifiesto" class="manifesto">
+        <div class="glass-card">
+            <h2>El Arte de lo Imposible</h2>
+            <p>Cada lienzo es una ventana hacia un sueño lúcido. No vendemos decoración; ofrecemos fragmentos de una dimensión paralela, creados con técnicas clásicas de veladura y pigmentos minerales para coleccionistas que buscan lo extraordinario.</p>
+        </div>
+    </section>
+
+    <!-- Galería de Obras -->
+    <section id="galeria" class="gallery-section">
+        <h2 class="section-title">Obras Disponibles</h2>
+        <div class="gallery-grid">
+            
+            <!-- Obra 1 -->
+            <article class="art-card">
+                <div class="art-frame">
+                    <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80" alt="El Eco del Tiempo">
+                    <div class="art-overlay">
+                        <a href="#modal-obra-1" class="btn-view">Inspeccionar Obra</a>
+                    </div>
+                </div>
+                <div class="art-info">
+                    <h3>El Eco del Tiempo</h3>
+                    <p>Óleo sobre lino • 120 x 90 cm</p>
+                </div>
+            </article>
+
+            <!-- Obra 2 -->
+            <article class="art-card">
+                <div class="art-frame">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80" alt="Jardín de Cristal">
+                    <div class="art-overlay">
+                        <a href="#modal-obra-2" class="btn-view">Inspeccionar Obra</a>
+                    </div>
+                </div>
+                <div class="art-info">
+                    <h3>Jardín de Cristal</h3>
+                    <p>Técnica mixta • 100 x 100 cm</p>
+                </div>
+            </article>
+
+            <!-- Obra 3 -->
+            <article class="art-card">
+                <div class="art-frame">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Gravedad Cero">
+                    <div class="art-overlay">
+                        <a href="#modal-obra-3" class="btn-view">Inspeccionar Obra</a>
+                    </div>
+                </div>
+                <div class="art-info">
+                    <h3>Gravedad Cero</h3>
+                    <p>Óleo y pan de oro • 150 x 110 cm</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Modales en CSS Puro (Se activan al hacer clic en "Inspeccionar Obra") -->
+    <div id="modal-obra-1" class="css-modal">
+        <div class="modal-content">
+            <a href="#galeria" class="close-modal">×</a>
+            <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80" alt="El Eco del Tiempo">
+            <div class="modal-text">
+                <h3>El Eco del Tiempo</h3>
+                <p class="specs">Óleo sobre lino belga • Certificado de autenticidad incluido.</p>
+                <p>Una exploración cromática sobre la memoria fragmentada y la fluidez de los recuerdos en el estado REM.</p>
+                <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20la%20obra%20'El%20Eco%20del%20Tiempo'" target="_blank" class="btn-whatsapp-modal">Consultar disponibilidad por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-obra-2" class="css-modal">
+        <div class="modal-content">
+            <a href="#galeria" class="close-modal">×</a>
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80" alt="Jardín de Cristal">
+            <div class="modal-text">
+                <h3>Jardín de Cristal</h3>
+                <p class="specs">Técnica mixta sobre madera • Pieza única 1/1.</p>
+                <p>Naturaleza imposible donde la botánica se fusiona con estructuras geométricas translúcidas.</p>
+                <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20la%20obra%20'Jardín%20de%20Cristal'" target="_blank" class="btn-whatsapp-modal">Consultar disponibilidad por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-obra-3" class="css-modal">
+        <div class="modal-content">
+            <a href="#galeria" class="close-modal">×</a>
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Gravedad Cero">
+            <div class="modal-text">
+                <h3>Gravedad Cero</h3>
+                <p class="specs">Óleo y pan de oro de 24k • Gran formato.</p>
+                <p>Un viaje nocturno hacia el abismo estelar, simbolizando la liberación de las ataduras terrenales.</p>
+                <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20la%20obra%20'Gravedad%20Cero'" target="_blank" class="btn-whatsapp-modal">Consultar disponibilidad por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Contacto / Cierre -->
+    <footer id="contacto" class="footer">
+        <h2>¿Deseas adquirir una pieza o encargar una obra a medida?</h2>
+        <p>Atención personalizada directa con el estudio del artista. Envíos asegurados a todo el mundo.</p>
+        <!-- Reemplaza 1234567890 con tu número real incluyendo código de país -->
+        <a href="https://wa.me/1234567890?text=Hola,%20me%20gustaría%20recibir%20el%20catálogo%20privado%20de%20cuadros%20surrealistas." target="_blank" class="btn-whatsapp-main">
+            Hablar por WhatsApp
+        </a>
+        <div class="copyright">
+            <p>© 2026 ONÍRICA Galería Surrealista. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp siempre visible -->
+    <a href="https://wa.me/1234567890?text=Hola,%20vengo%20de%20la%20web%20ONÍRICA%20y%20quisiera%20más%20información." target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32" class="wa-icon"><path d="M16 2a13 13 0 0 0-11 19.9L3.3 29l7.3-1.9A13 13 0 1 0 16 2zm0 23.8a10.8 10.8 0 0 1-5.5-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4A10.8 10.8 0 1 1 16 25.8zm5.9-8.1c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.3 3.1c.2.2 2.2 3.3 5.3 4.6.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+    </a>
+
 </body>
 </html>
